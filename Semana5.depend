@@ -1,0 +1,155 @@
+# depslib dependency file v1.0
+1369420617 source:c:\users\tecnocomp\desktop\lab\semana5-master\block.cpp
+	"block.h"
+
+1369420617 c:\users\tecnocomp\desktop\lab\semana5-master\block.h
+	"SDL.h"
+	"SDL_image.h"
+	"Utility.h"
+	"Dot.h"
+
+1369703442 c:\users\tecnocomp\desktop\lab\semana5-master\utility.h
+	"SDL.h"
+	"SDL_image.h"
+	"Timer.h"
+	<string>
+
+1368470394 c:\users\tecnocomp\desktop\lab\semana5-master\timer.h
+	"SDL.h"
+
+1369423562 c:\users\tecnocomp\desktop\lab\semana5-master\dot.h
+	<cmath>
+	"Utility.h"
+	"Particle.h"
+
+1368470394 c:\users\tecnocomp\desktop\lab\semana5-master\particle.h
+	"SDL.h"
+	"SDL_image.h"
+	"Utility.h"
+	<string>
+	<cstdlib>
+
+1369579685 source:c:\users\tecnocomp\desktop\lab\semana5-master\blockdown.cpp
+	"BlockDown.h"
+
+1369496534 c:\users\tecnocomp\desktop\lab\semana5-master\blockdown.h
+	<list>
+	"block.h"
+	<cstdlib>
+	<iostream>
+
+1369494919 source:c:\users\tecnocomp\desktop\lab\semana5-master\blockfast.cpp
+	"BlockFast.h"
+
+1369494811 c:\users\tecnocomp\desktop\lab\semana5-master\blockfast.h
+	"block.h"
+
+1369513343 source:c:\users\tecnocomp\desktop\lab\semana5-master\blockghost.cpp
+	"BlockGhost.h"
+
+1369512819 c:\users\tecnocomp\desktop\lab\semana5-master\blockghost.h
+	"block.h"
+
+1369415518 source:c:\users\tecnocomp\desktop\lab\semana5-master\blocknormal.cpp
+	"BlockNormal.h"
+
+1369415590 c:\users\tecnocomp\desktop\lab\semana5-master\blocknormal.h
+
+1369422593 source:c:\users\tecnocomp\desktop\lab\semana5-master\blockslow.cpp
+	"BlockSlow.h"
+
+1369422593 c:\users\tecnocomp\desktop\lab\semana5-master\blockslow.h
+	"block.h"
+
+1369793204 source:c:\users\tecnocomp\desktop\lab\semana5-master\blockteleport.cpp
+	"BlockTeleport.h"
+
+1369522442 c:\users\tecnocomp\desktop\lab\semana5-master\blockteleport.h
+	"block.h"
+
+1369706895 source:c:\users\tecnocomp\desktop\lab\semana5-master\button.cpp
+	"Button.h"
+
+1369708121 c:\users\tecnocomp\desktop\lab\semana5-master\button.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_mixer.h"
+	<string>
+
+1369423716 source:c:\users\tecnocomp\desktop\lab\semana5-master\dot.cpp
+	"Dot.h"
+
+1369760027 source:c:\users\tecnocomp\desktop\lab\semana5-master\life.cpp
+	"Life.h"
+
+1369689931 c:\users\tecnocomp\desktop\lab\semana5-master\life.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"Dot.h"
+	"paddle.h"
+	"block.h"
+	<list>
+
+1369493987 c:\users\tecnocomp\desktop\lab\semana5-master\paddle.h
+	"SDL.h"
+	"SDL_image.h"
+	"Utility.h"
+	"Dot.h"
+	"block.h"
+
+1369706915 source:c:\users\tecnocomp\desktop\lab\semana5-master\menu.cpp
+	"Menu.h"
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	<string>
+
+1369706895 c:\users\tecnocomp\desktop\lab\semana5-master\menu.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	<string>
+
+1369760341 source:c:\users\tecnocomp\desktop\lab\semana5-master\paddle.cpp
+	"Paddle.h"
+
+1368470394 source:c:\users\tecnocomp\desktop\lab\semana5-master\particle.cpp
+	"Particle.h"
+
+1368470394 source:c:\users\tecnocomp\desktop\lab\semana5-master\timer.cpp
+	"Timer.h"
+
+1368470394 source:c:\users\tecnocomp\desktop\lab\semana5-master\utility.cpp
+	"Utility.h"
+
+1369792234 source:c:\users\tecnocomp\desktop\lab\semana5-master\main.cpp
+	"SDL.h"
+	"SDL_image.h"
+	"Timer.h"
+	"SDL/SDL_mixer.h"
+	"Particle.h"
+	"Dot.h"
+	<string>
+	<cstdlib>
+	"block.h"
+	<list>
+	"paddle.h"
+	<iostream>
+	"BlockSlow.h"
+	"BlockDown.h"
+	"BlockTeleport.h"
+	"BlockGhost.h"
+	"Menu.h"
+	"Button.h"
+	"life.h"
+	"Level.h"
+
+1369791266 source:c:\users\tecnocomp\desktop\lab\semana5-master\level.cpp
+	"Level.h"
+
+1369791247 c:\users\tecnocomp\desktop\lab\semana5-master\level.h
+	<list>
+	"block.h"
+	"Dot.h"
+	"paddle.h"
+	"Life.h"
+	<iostream>
+

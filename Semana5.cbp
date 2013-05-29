@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Semana5" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Semana5" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Semana5" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="BlockDown.cpp" />
+		<Unit filename="BlockDown.h" />
+		<Unit filename="BlockFast.cpp" />
+		<Unit filename="BlockFast.h" />
+		<Unit filename="BlockGhost.cpp" />
+		<Unit filename="BlockGhost.h" />
+		<Unit filename="BlockNormal.cpp" />
+		<Unit filename="BlockNormal.h" />
+		<Unit filename="BlockSlow.cpp" />
+		<Unit filename="BlockSlow.h" />
+		<Unit filename="BlockTeleport.cpp" />
+		<Unit filename="BlockTeleport.h" />
+		<Unit filename="Button.cpp" />
+		<Unit filename="Button.h" />
+		<Unit filename="Dot.cpp" />
+		<Unit filename="Dot.h" />
+		<Unit filename="Level.cpp" />
+		<Unit filename="Level.h" />
+		<Unit filename="Life.cpp" />
+		<Unit filename="Life.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
+		<Unit filename="Particle.cpp" />
+		<Unit filename="Particle.h" />
+		<Unit filename="Timer.cpp" />
+		<Unit filename="Timer.h" />
+		<Unit filename="Utility.cpp" />
+		<Unit filename="Utility.h" />
+		<Unit filename="block.cpp" />
+		<Unit filename="block.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="paddle.cpp" />
+		<Unit filename="paddle.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

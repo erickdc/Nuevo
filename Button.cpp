@@ -3,13 +3,10 @@
 Button::Button(int x,int y, int x2, int y2,int x3, int y3, int w, int h,SDL_Surface *screen)
 {
     this->screen = screen;
-    this->images[0]= IMG_Load("MENU/start.png");
-    this->images[1]= IMG_Load("MENU/start1.png");
-    this->images[2]= IMG_Load("MENU/instruction.png");
-    this->images[3]= IMG_Load("MENU/instruction1.png");
-    this->images[4]= IMG_Load("MENU/exit.png");
-    this->images[5]= IMG_Load("MENU/exit1.png");
+    showImages();
+    this->image=IMG_Load( "MENU/background2.png" );
     buttonClick = Mix_LoadWAV( "select.wav" );
+    activeIns=false;
     this->current_frame=0;
     this->current_frame2=2;
     this->current_frame3=4;
@@ -26,6 +23,7 @@ Button::Button(int x,int y, int x2, int y2,int x3, int y3, int w, int h,SDL_Surf
     this->tercero=false;
     this->termino=false;
     this->quitProgram=false;
+
 }
 
 Button::~Button()
@@ -41,6 +39,7 @@ Button::~Button()
 void Button::Controles(){
 SDL_Event event;
  //If there's an event to handle
+      if(!this->activeIns){
         if( SDL_PollEvent( &event ) )
         {
 
@@ -82,7 +81,12 @@ SDL_Event event;
                     case SDLK_SPACE:
                         if(current_frame==1){
                             termino=true;
-                        }else{
+                        }else if(current_frame2==3){
+                            activeIns=true;
+                            dissapear();
+                        }else if(current_frame3==5){
+                            quitProgram=true;
+                            }else{
                         this->quitProgram=true;
                         }
                         break;
@@ -96,7 +100,10 @@ SDL_Event event;
 
         }
 
-}
+    }
+ }else{
+ showIns();
+ }
 }
 void Button::render()
 {
@@ -133,7 +140,63 @@ void Button::render()
     SDL_BlitSurface( images[current_frame3], NULL, screen, &offset );
 
 }
+void Button::showIns(){
+    SDL_Rect offset;
+    offset.x = 0;
+    offset.y = 0;
 
+    SDL_BlitSurface( image, NULL, screen, &offset );
+
+    SDL_Event event;
+
+    if( SDL_PollEvent( &event ) )
+        {
+
+            //If a key was pressed
+            if( event.type == SDL_KEYDOWN )
+            {
+                //Set the proper message surface
+                switch( event.key.keysym.sym )
+                {
+                    case SDLK_ESCAPE: activeIns = false; original();break;
+
+
+                }
+            }
+           // If the user has Xed out the window
+           else if( event.type == SDL_QUIT )
+            {
+
+            quitProgram= true;
+
+        }
+    }
+}
+
+void Button::showImages(){
+    this->images[0]= IMG_Load("MENU/start.png");
+    this->images[1]= IMG_Load("MENU/start1.png");
+    this->images[2]= IMG_Load("MENU/instruction.png");
+    this->images[3]= IMG_Load("MENU/instruction1.png");
+    this->images[4]= IMG_Load("MENU/exit.png");
+     this->images[5]= IMG_Load("MENU/exit1.png");
+}
+void Button::dissapear(){
+   x=x+3000;
+   y=y+3000;
+   x2=x2+3000;
+   y2=y2+3000;
+   x3=x3+3000;
+   y3=y3+3000;
+}
+void Button::original(){
+    x=x-3000;
+   y=y-3000;
+   x2=x2-3000;
+   y2=y2-3000;
+   x3=x3-3000;
+   y3=y3-3000;
+}
 void Button::backMenu(){
     this->current_frame=1;
     this->current_frame2=2;

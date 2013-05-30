@@ -218,6 +218,9 @@ int main( int argc, char* args[] )
             button.Controles();
             button.render();
             SDL_Flip(screen);
+
+            if(button.quitProgram)
+                quit=true;
         }else{
         //Start the frame timer
         fps.start();

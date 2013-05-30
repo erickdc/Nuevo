@@ -67,10 +67,10 @@
 1369522442 c:\users\tecnocomp\desktop\lab\semana5-master\blockteleport.h
 	"block.h"
 
-1369706895 source:c:\users\tecnocomp\desktop\lab\semana5-master\button.cpp
+1369855582 source:c:\users\tecnocomp\desktop\lab\semana5-master\button.cpp
 	"Button.h"
 
-1369708121 c:\users\tecnocomp\desktop\lab\semana5-master\button.h
+1369855582 c:\users\tecnocomp\desktop\lab\semana5-master\button.h
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
 	"SDL/SDL_mixer.h"
@@ -97,7 +97,7 @@
 	"Dot.h"
 	"block.h"
 
-1369706915 source:c:\users\tecnocomp\desktop\lab\semana5-master\menu.cpp
+1369852810 source:c:\users\tecnocomp\desktop\lab\semana5-master\menu.cpp
 	"Menu.h"
 	"SDL/SDL.h"
 	"SDL/SDL_image.h"
@@ -120,7 +120,7 @@
 1368470394 source:c:\users\tecnocomp\desktop\lab\semana5-master\utility.cpp
 	"Utility.h"
 
-1369792234 source:c:\users\tecnocomp\desktop\lab\semana5-master\main.cpp
+1369855582 source:c:\users\tecnocomp\desktop\lab\semana5-master\main.cpp
 	"SDL.h"
 	"SDL_image.h"
 	"Timer.h"

@@ -10,6 +10,7 @@ class Button
     public:
 
     SDL_Surface *images[6];
+    SDL_Surface *image;
     SDL_Surface *screen;
     int x;
     int y;
@@ -20,6 +21,11 @@ class Button
     int w;
     int h;
 
+    void dissapear();
+    void showImages();
+    void original();
+    bool activeIns;
+    void showIns();
     Mix_Chunk *buttonClick;
     bool quitProgram;
     int current_frame;

@@ -33,6 +33,8 @@ void Menu::render()
     offset.y = 0;
 
     SDL_BlitSurface( image, NULL, screen, &offset );
+
+
 }
 void Menu::backMenu(){
     this->x = 0;
